@@ -14,7 +14,7 @@ namespace Ch03
     */
     internal class _3_For문
     {
-        static void Main(string[] args)
+        static void Main3(string[] args)
         {
             // for 
             for (int i = 1; i <= 5; i++)   // 초기식 ;조건식 ; 증감식;
