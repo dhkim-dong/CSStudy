@@ -11,6 +11,10 @@ namespace Book.Ch02
         static void Main36(string[] args)
         {
             Console.WriteLine("코드 2-48 Var 키워드");
+            static void Main(string[] args)
+            {
+                var number = 100;
+            }
         }
     }
 }
