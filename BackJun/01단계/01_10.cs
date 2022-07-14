@@ -11,11 +11,10 @@ namespace BackJun._01단계
         static void Main10(string[] args)
         {
             // 아이디를 입력하세요 영어 아이디 소문자
-            string id0 = "joonas".ToLower();
             string id = Console.ReadLine();
-            if(id == id0)
+            if(id == id)
             {
-                Console.WriteLine(id0+"??!");
+                Console.WriteLine(id+"??!");
             }
         }
     }
