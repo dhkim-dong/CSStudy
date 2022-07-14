@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Book.Ch03
+namespace Book.Ch04
 {
     internal class P187
     {
@@ -20,14 +20,14 @@ namespace Book.Ch03
 
             Console.WriteLine("코드 4-32");
             int x = 1;
-            while(x < 50)
+            while (x < 50)
             {
                 Console.Clear();
                 Console.SetCursorPosition(x, 5);
 
-                if(x%3 == 0) // 3의 배수라면
+                if (x % 3 == 0) // 3의 배수라면
                     Console.WriteLine("__@");
-                else if(x % 3 == 1)
+                else if (x % 3 == 1)
                     Console.WriteLine("_^@");
                 else
                     Console.WriteLine("^_@");

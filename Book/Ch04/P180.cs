@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Book.Ch03
+namespace Book.Ch04
 {
     internal class P180
     {
@@ -13,7 +13,7 @@ namespace Book.Ch03
             Console.WriteLine("코드 4-25");
             for (int i = 0; i < 10; i++)
             {
-                if(i %2 != 0) // 홀수면
+                if (i % 2 != 0) // 홀수면
                     Console.WriteLine(i);
             }
         }

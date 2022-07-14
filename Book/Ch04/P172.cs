@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Book.Ch03
+namespace Book.Ch04
 {
     internal class P172
     {
@@ -14,13 +14,13 @@ namespace Book.Ch03
 
             string[] array = { "사과", "배", "포도", "딸기", "바나나" };
 
-            foreach(string item in array)
+            foreach (string item in array)
                 Console.WriteLine(item);
 
             Console.WriteLine("코드 4-18");
 
             string[] array2 = { "사과", "배", "포도", "딸기", "바나나" };
-            foreach(var item in array2)
+            foreach (var item in array2)
                 Console.WriteLine(item);
         }
     }

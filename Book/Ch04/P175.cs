@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Book.Ch03
+namespace Book.Ch04
 {
     internal class P175
     {
@@ -14,7 +14,7 @@ namespace Book.Ch03
             Console.WriteLine("코드 4-20");
             for (int i = 0; i < 10; i++)
             {
-                for (int j = 0; j < i+1; j++)
+                for (int j = 0; j < i + 1; j++)
                 {
                     Console.Write('*');
                 }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Book.Ch03
+namespace Book.Ch04
 {
     internal class P169
     {
@@ -14,7 +14,7 @@ namespace Book.Ch03
             long start = DateTime.Now.Ticks;
             long count = 0;
 
-            while(start + (10000000) > DateTime.Now.Ticks)
+            while (start + 10000000 > DateTime.Now.Ticks)
             {
                 count++;
             }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Book.Ch03
+namespace Book.Ch04
 {
     internal class P179
     {
@@ -14,7 +14,7 @@ namespace Book.Ch03
 
             for (int i = 1; i < 10; i++)
             {
-                if(i%2 == 0)
+                if (i % 2 == 0)
                 {
                     continue;
                 }
