@@ -10,15 +10,15 @@ namespace Exam._01
     {
         static void Main1(string[] args)
         {
-            char var1 = 'A';
-            int var2 = 100;
-            long var3 = 2147483648L;
-            float var4 = 3.14f;
+            char   var1 = 'A';
+            int    var2 = 100;
+            long   var3 = 2147483648L;
+            float  var4 = 3.14f;
             double var5 = 3.14159;
-            bool var6 = true;
-            bool var7 = false;
+            bool   var6 = true;
+            bool   var7 = false;
             string var8 = "hello";
-            _01_01 var9 = null;
+            string var9 = null; // 참조 값이면 null 사용 가능
 
             Console.WriteLine("var1 : "+ var1);
             Console.WriteLine("var2 : "+ var2);

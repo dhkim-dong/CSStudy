@@ -13,7 +13,7 @@ namespace Exam._01
             int n = 5;
             for (int i = 0; i < n; i++)
             {
-                for (int x = i; x<4; x++)
+                for (int x = 0; x<4-i; x++)
                 {
                     Console.Write(" ");
                 }

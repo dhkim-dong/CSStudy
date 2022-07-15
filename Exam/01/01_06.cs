@@ -16,11 +16,11 @@ namespace Exam._01
 
             Console.Write("입력한 점수는 {0}점 이고, 등급은 ", score);
 
-            if(score >= 90)
+            if(90 <= score && score < 100)
             {
                 grade = 'A';
             }
-            else if(80 < score && score < 90)
+            else if(80 <= score && score < 90)
             {
                 grade = 'B';
             }

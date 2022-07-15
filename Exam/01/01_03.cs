@@ -12,7 +12,7 @@ namespace Exam._01
         {
             int x = 4;
             int y = -2;
-            int z;
+            int z = 0;
 
             z = x + y;
             Console.WriteLine("x + y = z : " + z );

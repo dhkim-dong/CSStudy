@@ -16,7 +16,6 @@
     <Folder Include="05\" />
     <Folder Include="04\" />
     <Folder Include="03\" />
-    <Folder Include="02\" />
   </ItemGroup>
 
 </Project>

@@ -8,7 +8,7 @@ namespace Exam._01
 {
     internal class _01_10
     {
-        static void Main(string[] args)
+        static void Main10(string[] args)
         {
             int n1 = 0;
             int n2 = 1;
@@ -26,7 +26,7 @@ namespace Exam._01
                 n1 = n2;
 
                 n2 = n3;
-
+                // 피보나치 수열
             }
         }
     }

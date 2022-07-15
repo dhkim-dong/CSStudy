@@ -18,14 +18,14 @@ namespace Exam._01
             year = int.Parse(Console.ReadLine());
 
             Console.Write("태어난 년도 입력 : ");
-            birth = int.Parse(Console.ReadLine());
+            birth = Convert.ToInt32(Console.ReadLine());
 
             Console.Write("이름 입력 : ");
             name = Console.ReadLine();
 
             int age = year - birth;
 
-            Console.Write($"당신은 올해 만 {age}세 입니다.");
+            Console.Write($"{name}님 안녕하세요.\n당신은 올해 만 {age}세 입니다.");
         }
     }
 }
