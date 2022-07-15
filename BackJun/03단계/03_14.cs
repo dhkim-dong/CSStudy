@@ -32,10 +32,9 @@ namespace BackJun._03단계
             // (3) 1번 값의 1의 자리수*10 (2)에서 만들어진 값의 일의 자리수를 더하세요.
             result3 = ten * 10 + result2 % 10;
 
-            if (result3 == result1)
-                break;
 
             // (4) 위 방법을 반복하세요 기존의 값으로 돌아오는 N값을 구하세요.
+            Console.WriteLine("집에서 한 것");
         }
     }
 }
