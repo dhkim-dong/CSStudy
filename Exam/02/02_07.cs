@@ -35,6 +35,8 @@ namespace Exam._02
                     break;
                 }
 
+                //temp--;          // 단순 무식하게 하나씩 빼서 구한다. 이런 방법도 있다.
+
                 if (a % temp != 0)
                 {
                     a = a % temp;

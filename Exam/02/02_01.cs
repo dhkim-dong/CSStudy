@@ -11,14 +11,14 @@ namespace Exam._02
         static void Main1(string[] args)
         {
             char[] str = { 'I', ' ', 'L', 'O', 'V', 'E', ' ', 'Y', 'O', 'U' };
-            int row = 10;
+            int row;
             int col;
 
-            for (int i = 1; i < row; i++)
+            for (row = 1; row < 10; row++)
             {
-                for (int y = 0; y < i+1; y++)
+                for (col = 0; col < row+1; col++)
                 {
-                    Console.Write(str[y]);
+                    Console.Write(str[col]);
                 }
                 Console.Write('\n');
             }

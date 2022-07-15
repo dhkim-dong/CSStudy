@@ -25,11 +25,11 @@ namespace Exam._02
 
                 if (arr[mid] > value)
                 {
-                    end = mid;
+                    end = mid - 1;
                 }
                 else if (arr[mid] < value)
                 {
-                    start = mid;
+                    start = mid + 1;
                 }
                 else  // arr[mid] = value 일때
                 {
