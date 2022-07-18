@@ -8,7 +8,7 @@ namespace BackJun._04단계
 {
     internal class _04_08
     {
-        static void Main(string[] args)
+        static void Main7(string[] args)
         {
             StringBuilder sb = new StringBuilder();
             int N = int.Parse(Console.ReadLine());
@@ -37,9 +37,9 @@ namespace BackJun._04단계
             for (int i = 0; i < N; i++)
             {
                 results[i] = String.Format("{0:0.000}", mapTot["Tot" + i] / int.Parse(mapValue["value" + i][0]));
-                sb.Append(results[i] + "\n");
             }
-            Console.WriteLine(sb.ToString());
+
+
         }
     }
 }

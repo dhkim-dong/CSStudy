@@ -14,17 +14,38 @@ namespace BackJun._04단계
 
             StringBuilder sb = new StringBuilder();
 
-            string[] inputs = Console.ReadLine().Split();
-
-            string[] values = new string[T];
+            string[] inputs = new string[T];
+            for (int i = 0; i < T; i++)
+            {
+                inputs[i] = Console.ReadLine();
+            }
 
             for (int i = 0; i < T; i++)
             {
-                values[i] = inputs[i];
+                char[] temp = inputs[i].ToCharArray();
+                int j = 0;
+                int resultCount = 0;
+                int Count = 0;
+
+                while (true)
+                {
+                    if (temp[j].ToString() == "O")
+                    {
+                        Count++;
+                        resultCount += Count;
+                    }
+                    else
+                    {
+                        Count = 0;
+                    }
+                    j++;
+
+                    if (j == temp.Length)
+                        break;
+                }
+                sb.Append(resultCount.ToString()+ "\n");
             }
-
-
-            //if( )  values[0][0] == 'O';
+            Console.WriteLine(sb.ToString());
         }
     }
 }
