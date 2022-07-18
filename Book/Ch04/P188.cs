@@ -8,7 +8,7 @@ namespace Book.Ch04
 {
     internal class P188
     {
-        static void Main(string[] args)
+        static void Main38(string[] args)
         {
             Console.WriteLine("코드 4-33");
 

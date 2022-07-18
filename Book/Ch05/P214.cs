@@ -1,0 +1,23 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Book.Ch05
+{
+    internal class P214
+    {
+        static void Main6(string[] args)
+        {
+            List<int> list = new List<int>() { 52, 273, 32, 64 };
+
+            list.Remove(52);
+
+            foreach(int item in list)
+            {
+                Console.WriteLine("Count : " + list.Count + "\titem : "+item);
+            }
+        }
+    }
+}
