@@ -29,7 +29,7 @@ namespace Book.Ch06
             }
         }
 
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
             Console.WriteLine(Fibonacci.Get(40));
             Console.WriteLine(Fibonacci.Get(100));
