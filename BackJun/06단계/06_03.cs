@@ -14,40 +14,29 @@ namespace BackJun._06단계
 
             string input = Console.ReadLine();
 
-            int[] values = new int[input.Length];
 
-            for (int i = 0; i < input.Length; i++)
+            for (int j = 97; j < 123; j++)
             {
-                values[i] = (int)input[i];
-            }
+                char alpha = Convert.ToChar(j);
+                bool hasinput = false;
+                bool isFirst = false;
 
-            // 아스키코드 a = 97   ~ z= 122   26개
-            // 등장하는 위치를 출력하시오.
-
-            int[] counts = new int[26];
-
-            int[] Resultcount = new int[26];
-
-            for (int i = 0; i < counts.Length; i++)
-            {
-                counts[i] = 97 + i;
-            }
-
-            for (int x = 0; x < input.Length; x++)
-            {
-                for (int n = 0; n < counts.Length; n++)
+                for (int i = 0; i < input.Length; i++)
                 {
-                    if (values[x] == counts[n])
+                    if(input[i] == alpha && !isFirst)
                     {
-                        Resultcount[n]++;
+                        isFirst = true;
+                        hasinput = true;
+                        sb.Append(i.ToString() + " ");
                     }
+                }
+
+                if (!hasinput)
+                {
+                    sb.Append("-1" + " ");
                 }
             }
 
-            for (int y = 0; y < Resultcount.Length; y++)
-            {
-                sb.Append(Resultcount[y].ToString() + " ");
-            }
             Console.WriteLine(sb.ToString());
         }
     }

@@ -8,7 +8,7 @@ namespace BackJun._05단계
 {
     internal class _05_02
     {
-        static void Main(string[] args)
+        static void Main2(string[] args)
         {
             StringBuilder sb = new StringBuilder();
             int dn = 0;
