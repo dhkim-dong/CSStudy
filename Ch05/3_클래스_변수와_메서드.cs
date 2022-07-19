@@ -16,6 +16,9 @@ using System.Threading.Tasks;
  * - 클래스 이름으로 직접 참조하거나 호출한다.
  * 
  * ★ 싱글톤 ★
+ * - static을 활용한 가장 대표적인 객체 생성 방법
+ * - 싱글톤 패턴이 적용된 객체는 메모리에 하나의 인스턴스만 생성하고 공유한다.
+ * - 싱글톤 객체를 활용해서 메모리 절약과 성능 향상을 도모한다.
  */
 
 
@@ -50,7 +53,7 @@ namespace Ch05
 
     internal class _3_클래스_변수와_메서드
     {
-        static void Main(string[] args)      
+        static void Main3(string[] args)      
         {
             Increment inc1 = new Increment();
             Increment inc2 = new Increment();
