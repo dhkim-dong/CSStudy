@@ -8,7 +8,7 @@ namespace BackJun._04단계
 {
     internal class _04_07re
     {
-        static void Main(string[] args)
+        static void Main8(string[] args)
         {
             StringBuilder sb = new StringBuilder();
             int N = int.Parse(Console.ReadLine());
