@@ -35,7 +35,7 @@ namespace Ch06
 
     internal class _3_구조체
     {
-        static void Main(string[] args)
+        static void Main3(string[] args)
         {
             Point p1;                         // 구조체는 힙과 스택에 둘다 저장할 수 있다. new 키워드로 생성가능
             p1.x = 1;
