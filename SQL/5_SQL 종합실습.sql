@@ -236,3 +236,5 @@ SELECT * FROM `sales` AS a
 JOIN `member` 			 AS b ON a.uid = b.uid
 JOIN `department`     AS c ON b.dep = c.depNo;
 #실습 5-13
+
+
