@@ -8,15 +8,34 @@ namespace BackJun._06단계
 {
     internal class _06_06
     {
-        static void Main6(string[] args)
+        static void Main1(string[] args)
         {
             StringBuilder sb = new StringBuilder();
-            string[] inputs = Console.ReadLine().Split();
+            string input = Console.ReadLine().Trim();
 
-            sb.Append(inputs.Length.ToString());
-            Console.WriteLine(sb.ToString());
+            // 문자열 내에서 " " 띄어쓰기 한 부분을 찾아서 +1을 하면 단어의 개수를 찾을 수 있다.
 
-            // 문장이 아니라 단어
+            // asdvavd" "asdfasfd" 'asdf" "asdf" "afdaa" ";
+
+            // 문자열 내에서 " " 찾기
+            int count = 0;
+
+            for (int i = 0; i < input.Length; i++)
+            {
+                if (input[i] == ' ')
+                {
+                    count++;
+                }
+            }
+
+            if(input.Length == 0)
+            {
+                Console.WriteLine(0);
+            }
+            else
+            {
+                Console.WriteLine(count + 1);
+            }
         }
     }
 }
