@@ -8,7 +8,7 @@ namespace BackJun._06단계
 {
     internal class _06_06
     {
-        static void Main(string[] args)
+        static void Main6(string[] args)
         {
             StringBuilder sb = new StringBuilder();
             string[] inputs = Console.ReadLine().Split();
