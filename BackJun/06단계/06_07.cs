@@ -8,10 +8,11 @@ namespace BackJun._06단계
 {
     internal class _06_07
     {
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
-            string A = Console.ReadLine();
-            string B = Console.ReadLine();
+            string[] inputs = Console.ReadLine().Split();
+            string A = inputs[0];
+            string B = inputs[1];
 
             // 같지 않은 세자리 수 두 수를 비교하는대..
 
