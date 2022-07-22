@@ -8,7 +8,7 @@ namespace BackJun._06단계
 {
     internal class _06_09
     {
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
             string input = Console.ReadLine();
 
@@ -16,58 +16,64 @@ namespace BackJun._06단계
 
             int cratiacount = 0;
 
-            for (int i = 0; i < input.Length; i++)       //  length Exception을 해결하기 위해서는 -> i행을 먼저 조사한 후에 i+1을 조사한다.
-            {             
+            for (int i = 0; i < input.Length; i++)       //  크로아티아 알파벳을 구한다. 
+            {
+                if (i + 1 < input.Length)
+                {
+                    if (input[i] == 'c') // i=0 일때 (조합) ok // i=1의 원소..에 대해서 처리방법을 생각해야한다. lj , dz, nj 같은 것
+                    {
+                        if (input[i + 1] == '=')
+                            cratiacount++;
+                    }
+                    else if (input[i] == 'c')
+                    {
+                        if (input[i + 1] == '-')
+                            cratiacount++;
+                    }
+                    else if (input[i] == 'd')
+                    {
+                        if (input[i + 1] == '-')
+                            cratiacount++;
 
-
-
-                if (input[i] == 'c' ) // i=0 일때 (조합) ok // i=1의 원소..에 대해서 처리방법을 생각해야한다. lj , dz, nj 같은 것
-                {
-                    if (input[i+1] == '=')
-                        cratiacount++;
-                }
-                else if (input[i].ToString() + input[i + 1].ToString() == "c-")
-                {
-                    count++;
-                    isAlpha = true;
-                }
-                else if (input[i].ToString() + input[i + 1].ToString() + input[i+2] == "dz=" && !notBeta)  // 예외 사항을 만들어 둘 것 (i) 인덱스 초과하는 경우
-                {
-                    count++;
-                    isAlpha = true;
-                    isBeta = true;
-                }
-                else if (input[i].ToString() + input[i + 1].ToString() == "d-")
-                {
-                    count++;
-                    isAlpha = true;
-                }
-                else if (input[i].ToString() + input[i + 1].ToString() == "lj")  
-                {
-                    count++;
-                    isAlpha = true;
-                }
-                else if (input[i].ToString() + input[i + 1].ToString() == "nj")
-                {
-                    count++;
-                    isAlpha = true;
-                }
-                else if (input[i].ToString() + input[i + 1].ToString() == "s=")
-                {
-                    count++;
-                    isAlpha = true;
-                }
-                else if (input[i].ToString() + input[i + 1].ToString() == "z=")
-                {
-                    count++;
-                    isAlpha = true;
-                }
-                else
-                {
-                    count++;
-                }
+                        if (i + 2 < input.Length)
+                        {
+                            if (input[i + 1] == 'z' && (input[i + 2] == '='))
+                            {
+                                cratiacount += 2;
+                            }
+                        }
+                    }
+                    else if (input[i] == 'l')
+                    {
+                        if (input[i + 1] == 'j')
+                            cratiacount++;
+                    }
+                    else if (input[i] == 'n')
+                    {
+                        if (input[i + 1] == 'j')
+                            cratiacount++;
+                    }
+                    else if (input[i] == 's')
+                    {
+                        if (input[i + 1] == '=')
+                            cratiacount++;
+                    }
+                    else if (input[i] == 'z')
+                    {
+                        if (input[i - 1] == 'd' && input[i + 1] == '=')
+                        {
+                            continue;
+                        }
+                        if (input[i + 1] == '=')
+                            cratiacount++;
+                    }
+                }           
             }
-            Console.WriteLine(count);
+            // input의 length 값에서 크로아티아 알파벳의 숫자를 빼면 정답이 출력!
+            // dz=이 나올경우 z=은 빼야한다..
+
+            Console.WriteLine(input.Length - cratiacount);
+
         }
     }
 }

@@ -10,7 +10,7 @@ namespace BackJun._06단계
     {
         static void Main1(string[] args)
         { 
-            int distAlpha = 97 - 65;          // 32
+            //int distAlpha = 97 - 65;          // 32
 
             //Console.WriteLine(r1);          //65  대문자 ~  90             (25개)
             //Console.WriteLine(r2);          //97  소문자 ~ 122
