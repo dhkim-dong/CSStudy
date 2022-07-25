@@ -8,7 +8,7 @@ namespace Book.Ch09
 {
     internal class P446
     {
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
             //File.WriteAllText(@"c:\test\test.txt", "문자열을 파일에 씁니다");
 
