@@ -27,7 +27,7 @@ namespace Exam._04
 
         public void Print()
         {
-            foreach(var i in arr)
+            foreach(T i in arr)
             {
                 Console.Write(i + " ");             
             }

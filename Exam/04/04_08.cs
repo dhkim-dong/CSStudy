@@ -37,7 +37,7 @@ namespace Exam._04
 
     internal class _04_08
     {
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
             Apple apple = new Apple();
             Banana banana = new Banana();
