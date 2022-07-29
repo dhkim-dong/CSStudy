@@ -68,7 +68,7 @@ namespace Exam._06
                 conn.Open();
 
                 MySqlCommand cmd = conn.CreateCommand();
-                cmd.CommandText = $"INSERT INTO `{TABLE}` " + $"VALUES (`{uid}`, `{name}`, `{hp}`, `{age}`)";
+                cmd.CommandText = $"INSERT INTO `{TABLE}` " + $"VALUES ('{uid}', '{name}', '{hp}', '{age}')";
                 count = cmd.ExecuteNonQuery();
             }
             catch(Exception e)

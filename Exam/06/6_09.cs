@@ -58,7 +58,7 @@ namespace Exam._06
                     {
                         conn.Open();
                         MySqlCommand cmd = conn.CreateCommand();
-                        cmd.CommandText = "INSERT INTO `user2`" + "VALUES(`" + uid + "`, `" + name + "`, `" + hp + "`, " + age + ")";
+                        cmd.CommandText = "INSERT INTO `user2`" + "VALUES('" + uid + "', '" + name + "', " + hp + ", " + age + ")";
                         cmd.ExecuteNonQuery();
                     }
                     catch(Exception e)
