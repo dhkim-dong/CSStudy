@@ -8,8 +8,10 @@ namespace BackJun._11단계
 {
     internal class _11_04
     {
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
+            StringBuilder sb = new StringBuilder();
+
             int N = int.Parse(Console.ReadLine());
 
             List<int> list = new List<int>();
@@ -20,20 +22,22 @@ namespace BackJun._11단계
                 list.Add(value);
             }
 
-            int r1 = (int)Math.Round(list.Average());
+            sb.Append((int)Math.Round(list.Average())+ "\n");
 
-            int r4 = list.Max() - list.Min();
 
 
             // 리스트 중앙값 구하는법?
 
             list.Sort();
-            int r2 = list[list.Count / 2];
+            sb.Append(list[list.Count / 2] + "\n");
 
 
             // 리스트 최빈값 구하는법?
-            int[] index = new int[list.Count + 1];
-            int max = index.Min();
+            // 데이터(인덱스)를
+            // 각각의 인덱스와 같은 값을 저장하는 리스트를 생성해야 한다.
+            int[] index = new int[list.Count];
+            int[] result = new int[list.Count];
+            int max = 0;
             int mode = 0;
 
             for (int i = 0; i < list.Count; i++)
@@ -43,19 +47,24 @@ namespace BackJun._11단계
 
             for (int i = 0; i < index.Length; i++)
             {
-                if (index[i] > max)
+                max = index[i];
+                mode = 0;
+                for (int j = 0; j < index.Length; j++)
                 {
-                    max = index[i];
-                    mode = i;
+                    if (j != i && index[j] == index[i])
+                    {
+                        mode++;
+                    }
                 }
+                result[i] = mode;
             }
 
-            int r3 = mode;
+            sb.Append(list[result.Max()] + "\n");
 
-            Console.WriteLine(r1);
-            Console.WriteLine(r2);
-            Console.WriteLine(r3);
-            Console.WriteLine(r4);
+            sb.Append(list.Max() - list.Min());
+
+            Console.WriteLine(sb);
+
         }
     }
 }

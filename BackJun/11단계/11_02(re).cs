@@ -6,26 +6,26 @@ using System.Threading.Tasks;
 
 namespace BackJun._11단계
 {
-    internal class _11_01
+    internal class _11_02_re_
     {
         static void Main1(string[] args)
         {
             int N = int.Parse(Console.ReadLine());
 
-            List<int> list = new List<int>();
+            int[] arr = new int[N]; 
 
             for (int i = 0; i < N; i++)
             {
-                int values = int.Parse(Console.ReadLine());
-                list.Add(values);
+                arr[i] = int.Parse(Console.ReadLine());
             }
 
-            list.Sort();
+            Array.Sort(arr);
 
-            for (int i = 0; i < list.Count; i++)
-            {
-                Console.WriteLine(list[i]);
-            }
+            StringBuilder sb = new StringBuilder();
+
+            sb.Append(String.Join("\n", arr));
+
+            Console.WriteLine(sb);
         }
     }
 }
