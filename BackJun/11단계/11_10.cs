@@ -8,7 +8,7 @@ namespace BackJun._11단계
 {
     internal class _11_10
     {
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
             StringBuilder sb = new StringBuilder();
 
@@ -32,6 +32,7 @@ namespace BackJun._11단계
 
             var output = list.Distinct().ToList();
 
+            output.Sort();
             // 해시테이블의 키값과 같으면 해당 value를 출력할 것.
             Dictionary<int, int> sort = new Dictionary<int, int>();
 
@@ -42,11 +43,16 @@ namespace BackJun._11단계
 
             for (int i = 0; i < list.Count; i++)
             {
-                if (list[i] == output.GetHashCode())
+                for (int j = 0; j < output.Count; j++)
                 {
-                    Console.WriteLine(output[list[i]]);
+                    if (list[i] == output[j])
+                    {
+                        sb.Append(sort[list[i]] + " ");
+                    }
                 }
             }
+            Console.WriteLine(sb);
+
 
             /* 시간 초과 : 전체를 다 비교하면서 Count를 세기 때문에
             for (int i = 0; i < list.Count; i++)
