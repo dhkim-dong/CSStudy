@@ -85,7 +85,191 @@ namespace Project3
                 isWhite = true;
                 isBlack = false;
             }
+
+            // 오목 판정
+            CheckOmok(x,y);
         }
+
+        public void CheckOmok(int x, int y)
+        {
+
+            // 왼쪽(오른쪽 검사)
+            int count = 1;
+
+            for (int i = x+1; i < 19; i++)
+            {
+                if (dataSet[x, y] == dataSet[i, y])
+                {
+                    count++;
+                }
+                else
+                {
+                    break;
+                }
+            }
+
+            CheckCountResult(count);
+
+
+
+            // 오른쪽(왼쪽 검사)
+            count = 1;
+
+            for (int i = x - 1; i >= 0; i--)
+            {
+                if (dataSet[x, y] == dataSet[i, y])
+                {
+                    count++;
+                }
+                else
+                {
+                    break;
+                }
+            }
+
+            CheckCountResult(count);
+
+            // 위쪽(아래쪽 검사)
+
+            count = 1;
+
+            for (int i = y + 1; i < 19; i++)
+            {
+                if (dataSet[x, y] == dataSet[x, i])
+                {
+                    count++;
+                }
+                else
+                {
+                    break;
+                }
+            }
+
+            CheckCountResult(count);
+
+            // 아래쪽(위쪽 검사)
+
+            count = 1;
+
+            for (int i = y - 1; i >= 0; i--)
+            {
+                if (dataSet[x, y] == dataSet[x, i])
+                {
+                    count++;
+                }
+                else
+                {
+                    break;
+                }
+            }
+            CheckCountResult(count);
+            // 11시 (11시 방향위 검사)
+            count = 1;
+
+            for (int i = x-1, j = y-1; i >=0 && j>=0 ; i--,j--)
+            {
+                if (dataSet[x, y] == dataSet[i, j])
+                {
+                    count++;
+                }
+                else
+                {
+                    break;
+                }
+            }
+
+            CheckCountResult(count);
+
+            // 16시
+
+            count = 1;
+
+            for (int i = x + 1, j = y + 1; i < 19 && j < 19; i++, j++)
+            {
+                if (dataSet[x, y] == dataSet[i, j])
+                {
+                    count++;
+                }
+                else
+                {
+                    break;
+                }
+            }
+            CheckCountResult(count);
+
+            // 13시
+
+            count = 1;
+
+            for (int i = x + 1, j = y - 1; i < 19 && j >= 0; i++, j--)
+            {
+                if (dataSet[x, y] == dataSet[i, j])
+                {
+                    count++;
+                }
+                else
+                {
+                    break;
+                }
+            }
+            CheckCountResult(count);
+
+            // 19시
+
+            count = 1;
+
+            for (int i = x - 1, j = y + 1; i >= 0 && j < 19; i--, j++)
+            {
+                if (dataSet[x , y] == dataSet[i, j])
+                {
+                    count++;
+                }
+                else
+                {
+                    break;
+                }
+            }
+            CheckCountResult(count);
+        }
+
+        public void CheckCountResult(int count)
+        {
+            if(count >= 5)
+            {
+                DialogResult result = MessageBox.Show("오목 입니다! 새로운 게임을 시작 할까요?",
+                    "확인",
+                    MessageBoxButtons.YesNo);
+
+                if (result == DialogResult.Yes)
+                {
+                    NewGame();
+                    return;
+                }
+                else
+                    this.Close();
+            }
+        }
+
+        public void NewGame()
+        {
+            // 화면 갱신
+            this.Invalidate();
+           
+
+            // dataset 초기화
+
+            for (int y = 0; y < 19; y++)
+            {
+                for (int x = 0; x < 19; x++)
+                {
+                    dataSet[x, y] = STONE.NONE;
+                }
+            }
+
+            // 흰돌 시작
+            isWhite = true;
+        }
+
 
         private void DrawBoard()
         {
