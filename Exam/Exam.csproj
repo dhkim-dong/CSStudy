@@ -10,8 +10,6 @@
   <ItemGroup>
     <Folder Include="10\" />
     <Folder Include="09\" />
-    <Folder Include="08\" />
-    <Folder Include="07\" />
   </ItemGroup>
 
   <ItemGroup>
