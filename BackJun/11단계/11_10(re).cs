@@ -15,7 +15,7 @@ namespace BackJun._11단계
 {
     internal class _11_10_re_
     {
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
             StringBuilder sb = new StringBuilder();
             int N = int.Parse(Console.ReadLine());
