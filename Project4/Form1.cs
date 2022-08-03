@@ -2,6 +2,8 @@ namespace Project4
 {
     public partial class Form1 : Form
     {
+        enum TYPE { NONE, BLOCK}
+
         // 그래픽 객체 선언
         Graphics g;
         Brush rackBrush = new SolidBrush(Color.Red);
@@ -13,6 +15,10 @@ namespace Project4
         List<Rectangle> blockList = new List<Rectangle>();
         //Rectangle[] blocks = new Rectangle[100];
         Rectangle ball = new Rectangle();
+
+        int formW = 300;
+        int formH = 500;
+
 
         int nBlock = 20;
         int racketW = 50;
@@ -30,6 +36,7 @@ namespace Project4
         double dir = 0;   // -1 : 위로 1: 아래로
 
         bool[] blockVisible = new bool[100];
+        List<TYPE> blockTYPE = new List<TYPE>();
 
         Random rand = new Random();
 
@@ -38,7 +45,7 @@ namespace Project4
             InitializeComponent();
 
             // 폼 사이즈
-            this.ClientSize = new Size(300, 500);
+            this.ClientSize = new Size(formW, formH);
             this.Text = "벽돌깨기 v1.0";
 
             // 그래픽 객체 생성
@@ -86,10 +93,12 @@ namespace Project4
                     blockH - 1));  
 
                 blockVisible[i] = true;
+                blockTYPE.Add(TYPE.BLOCK);
             }
         }
         public void InitRacket()
         {
+
             racket.X = this.Width / 2 - racketW/2; // Form Size Width의 절반(중앙) 이동 했더니 라켓의 절반만큼 +되었다. 해당 수치만큼 빼준다.
             racket.Y = racketY;
             racket.Width = racketW;
@@ -140,10 +149,11 @@ namespace Project4
             // ball이 벽돌에 충돌 했을 때
             for (int i = 0; i < nBlock; i++)
             {
-                if (ball.IntersectsWith(blockList[i]))
+                if (ball.IntersectsWith(blockList[i]) && TYPE.BLOCK == blockTYPE[i])
                 {
                     dir *= -1;
                     blockVisible[i] = false;
+                    blockTYPE[i] = TYPE.NONE;
                 }
             }
 
@@ -177,12 +187,18 @@ namespace Project4
         {
             if (e.KeyCode == Keys.Left)
             {
+                if (racket.X <= 0)
+                    return;
+
                 racket.X -= racket.Width;
             }
 
             if(e.KeyCode == Keys.Right)
             {
-                racket.X += racket.Width;
+                if (racket.X >= 240)
+                    return;
+
+                 racket.X += racket.Width;
             }
         }
     }
