@@ -18,7 +18,7 @@ namespace BackJun._12단계
 {
     internal class _12_4
     {
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
             int N = int.Parse(Console.ReadLine());
 
