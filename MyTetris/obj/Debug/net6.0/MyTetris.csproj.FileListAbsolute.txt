@@ -1,0 +1,15 @@
+C:\Users\502\Desktop\CSStudy\MyTetris\bin\Debug\net6.0\MyTetris.exe
+C:\Users\502\Desktop\CSStudy\MyTetris\bin\Debug\net6.0\MyTetris.deps.json
+C:\Users\502\Desktop\CSStudy\MyTetris\bin\Debug\net6.0\MyTetris.runtimeconfig.json
+C:\Users\502\Desktop\CSStudy\MyTetris\bin\Debug\net6.0\MyTetris.dll
+C:\Users\502\Desktop\CSStudy\MyTetris\bin\Debug\net6.0\MyTetris.pdb
+C:\Users\502\Desktop\CSStudy\MyTetris\obj\Debug\net6.0\MyTetris.csproj.AssemblyReference.cache
+C:\Users\502\Desktop\CSStudy\MyTetris\obj\Debug\net6.0\MyTetris.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\502\Desktop\CSStudy\MyTetris\obj\Debug\net6.0\MyTetris.AssemblyInfoInputs.cache
+C:\Users\502\Desktop\CSStudy\MyTetris\obj\Debug\net6.0\MyTetris.AssemblyInfo.cs
+C:\Users\502\Desktop\CSStudy\MyTetris\obj\Debug\net6.0\MyTetris.csproj.CoreCompileInputs.cache
+C:\Users\502\Desktop\CSStudy\MyTetris\obj\Debug\net6.0\MyTetris.dll
+C:\Users\502\Desktop\CSStudy\MyTetris\obj\Debug\net6.0\refint\MyTetris.dll
+C:\Users\502\Desktop\CSStudy\MyTetris\obj\Debug\net6.0\MyTetris.pdb
+C:\Users\502\Desktop\CSStudy\MyTetris\obj\Debug\net6.0\MyTetris.genruntimeconfig.cache
+C:\Users\502\Desktop\CSStudy\MyTetris\obj\Debug\net6.0\ref\MyTetris.dll
