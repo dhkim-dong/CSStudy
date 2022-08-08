@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\USER\\.nuget\\packages\\": {}
+    "C:\\Users\\502\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\USER\\Desktop\\CSStudy\\BackJun\\BackJun.csproj",
+      "projectUniqueName": "C:\\Users\\502\\Desktop\\CSStudy\\BackJun\\BackJun.csproj",
       "projectName": "BackJun",
-      "projectPath": "C:\\Users\\USER\\Desktop\\CSStudy\\BackJun\\BackJun.csproj",
-      "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\USER\\Desktop\\CSStudy\\BackJun\\obj\\",
+      "projectPath": "C:\\Users\\502\\Desktop\\CSStudy\\BackJun\\BackJun.csproj",
+      "packagesPath": "C:\\Users\\502\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\502\\Desktop\\CSStudy\\BackJun\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\502\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
