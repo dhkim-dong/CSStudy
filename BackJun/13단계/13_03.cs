@@ -8,7 +8,7 @@ namespace BackJun._13단계
 {
     internal class _13_03
     {
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
             while (true)
             {
