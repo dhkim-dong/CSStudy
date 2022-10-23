@@ -15,6 +15,7 @@ namespace BackJun._01단계
             Console.WriteLine(" \\. \". L_r'");
             Console.WriteLine("   `~\\/");
             Console.WriteLine("      |");
+
             Console.WriteLine("      |");
         }
     }
