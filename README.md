@@ -18,21 +18,21 @@
 
 * 데이터관리프로그램
   * WinForm과 MYSQL을 연동하여 작성하였습니다.
-<img src="img/two.png" width="300" height="300"/>
+<img src="img/two.png" width="400" height="300"/>
 
 * 오목
   * WinForm으로 오목 판과 돌을 구현하였고, 승리 조건에 해당하는 로직을 C# Visual Studio로 작성하였습니다.
-<img src="img/three.png" width="300" height="300"/>
+<img src="img/three.png" width="400" height="300"/>
 
 * 벽돌부수기
   * Winform을 활용하여 벽돌, 볼, 판을 구현하였고 Time 이벤트와 충돌효과를 이용하여 벽돌 부수기를 구현하였습니다.
-<img src="img/four.png" width="300" height="300"/>
+<img src="img/four.png" width="400" height="300"/>
 
 * 테트리스
   * MyTetris 폴더에서 작업 내용을 확인할 수 있습니다.
   * 콘솔창을 이용해서 테트리스 게임을 제작해보았습니다.
   * ASD키를 이용하여 블럭을 움직일 수 있습니다.
-<img src="img/five.png" width="300" height="300"/>
+<img src="img/five.png" width="400" height="300"/>
 
 💾 김동훈 Git 작업 내역
 ------------------------
