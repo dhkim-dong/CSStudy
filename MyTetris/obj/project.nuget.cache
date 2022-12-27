@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XH8uvSz32DA4IRfSRKZdmTFFl33pNCwFoAd9tmG8NdfqBiFA6M7gOsDMVI0DTrUB6yTmclK3kyrRIi4g1SfoUg==",
+  "dgSpecHash": "5dyxRZvWGbZq1pLWRFFSLPWsPqgGtXBJaT0k8jCOSAUjus286Fv0tRKlu4ZsFbO3usgV9gNpvABHc9Sk87YCWw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\502\\Desktop\\CSStudy\\MyTetris\\MyTetris.csproj",
+  "projectFilePath": "D:\\CSStudy\\MyTetris\\MyTetris.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
